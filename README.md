@@ -43,16 +43,7 @@ of a chosen numeric column, the cleaned data itself, and download
 buttons for both the cleaned data and the rows that got removed (so
 you can double check nothing important was thrown away).
 
-## Files
 
-```
-app.py        Streamlit UI (3 tabs: profile, clean, results)
-cleaning.py   All the actual cleaning logic, UI-independent and testable
-requirements.txt
-sample_messy_data.csv   Test file with every kind of mess baked in
-```
-
-## Extending it
 
 - Add Excel support: `pd.read_excel()` instead of / alongside `read_csv`
 - Add more outlier methods (e.g. isolation forest) in `cleaning.py`
